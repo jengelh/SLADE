@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <zlib.h>
 #include <bzlib.h>
-#include "../lzma/C/LzmaDec.h"
+#include <LzmaDec.h>
 
 #undef Status
 
