@@ -523,7 +523,7 @@ bool SLADEWxApp::OnInit()
 #endif
 
 	// Handle exceptions using wxDebug stuff, but only in release mode
-#ifdef NDEBUG
+#if defined(USE_CRASHHANDLER) && defined(NDEBUG)
 	wxHandleFatalExceptions(true);
 #endif
 

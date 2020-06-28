@@ -134,6 +134,10 @@ if (NOT NO_FLUIDSYNTH)
 	include_directories(${FLUIDSYNTH_INCLUDE_DIR})
 endif()
 
+if (NOT NO_CRASHHANDLER)
+	add_definitions(-DUSE_CRASHHANDLER)
+endif ()
+
 set(SLADE_SOURCES
 )
 set(SLADE_SCRIPTING_SOURCES)

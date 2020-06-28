@@ -23,6 +23,7 @@
 ### Additional configure switches for cmake
 
 * `-DNO_COTIRE=ON`: disable the use of precompiled headers
+* `-DNO_CRASHHANDLER=ON`: disable the use of a dedicated crash handler (as it is susceptible to crashes and hangs of its own) and default to the standard handler of the C runtime instead.
 * `-DNO_WEBVIEW=ON`: use if your wxWidgets build has no wxWebview or if not desired
 * `-DWX_GTK3=OFF`: use if your wxWidgets build is using the wxGTK2 backend (there is no autodetection at this point)
 
